@@ -1,3 +1,4 @@
+// Author: Kleyton Dias
 #include <iostream>
 using namespace std;
 
@@ -24,5 +25,5 @@ int main()
         }
     }
 
-    cout << "\n\n ## Média das Alturas das Pessoas com mais de 35 Anos: " << soma_altura/quant << " metros. \n\n";
+    cout << "\n\n ## MÃ©dia das Alturas das Pessoas com mais de 35 Anos: " << soma_altura/quant << " metros. \n\n";
 }
