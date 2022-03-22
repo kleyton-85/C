@@ -1,4 +1,5 @@
-/*FaÁa um programa que receba o valor dos catetos de um tri‚ngulo, calcule e mostre o
+// Author: Kleyton Dias
+/*Fa√ßa um programa que receba o valor dos catetos de um tri√¢ngulo, calcule e mostre o
 valor da hipotenusa.*/
 #include<stdio.h> //funcoes de entrada e saida (printf, scanf)
 #include <math.h> //usar funcao pow sqrt
