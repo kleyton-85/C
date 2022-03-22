@@ -1,3 +1,4 @@
+// Author: Kleyton Dias
 #include <iostream>
 using namespace std;
 int main()
@@ -7,10 +8,10 @@ int main()
     float salario_atual, novo_salario, ferias, decimo;
     int meses;
 
-    cout << "\n --> Digite o Salário Atual: R$ ";
+    cout << "\n --> Digite o SalÃ¡rio Atual: R$ ";
     cin >> salario_atual;
 
-    cout << "\n --> Digite a Quantidade de Meses Trabalhados (máximo 12): ";
+    cout << "\n --> Digite a Quantidade de Meses Trabalhados (mÃ¡ximo 12): ";
     cin >> meses;
 
     if(salario_atual < 1500 )
@@ -23,8 +24,8 @@ int main()
     ferias = salario_atual + salario_atual/3;
     decimo = (salario_atual * meses)/12;
 
-    cout << "\n\n ## Novo Salário: R$ " << novo_salario;
-    cout << "\n\n ## Valor das Férias: R$ " << ferias;
-    cout << "\n\n ## Valor do Décimo Terceiro: R$ " << decimo << "\n\n\n";
+    cout << "\n\n ## Novo SalÃ¡rio: R$ " << novo_salario;
+    cout << "\n\n ## Valor das FÃ©rias: R$ " << ferias;
+    cout << "\n\n ## Valor do DÃ©cimo Terceiro: R$ " << decimo << "\n\n\n";
 }
 
