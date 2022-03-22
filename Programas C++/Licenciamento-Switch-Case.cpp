@@ -1,3 +1,4 @@
+// Author: Kleyton Dias
 #include <iostream>
 using namespace std;
 
@@ -7,7 +8,7 @@ int main()
 
    int tipo, placa;
 
-    cout << "\n\n ### LICENCIAMENTO DE VEÍCULOS ### \n\n 1- Automóvel \n 2- Caminhão \n\n --> Escolha o tipo do veículo: ";
+    cout << "\n\n ### LICENCIAMENTO DE VEÃCULOS ### \n\n 1- AutomÃ³vel \n 2- CaminhÃ£o \n\n --> Escolha o tipo do veÃ­culo: ";
     cin >> tipo;
 
     cout << "\n --> Digite o Final da sua Placa: ";
@@ -26,7 +27,7 @@ int main()
           case 8: cout << "\n\n ## Pagamento do Licenciamento em Outubro ##\n"; break;
           case 9: cout << "\n\n ## Pagamento do Licenciamento em Novembro ##\n"; break;
           case 0: cout << "\n\n ## Pagamento do Licenciamento em Dezembro ##\n"; break;
-          default: cout << "\n\n ## Final da placa inválido! ##\n";
+          default: cout << "\n\n ## Final da placa invÃ¡lido! ##\n";
        }
        break;
 
@@ -41,11 +42,11 @@ int main()
           case 8: cout << "\n\n ## Pagamento do Licenciamento em Novembro ##\n"; break;
           case 9:
           case 0: cout << "\n\n ## Pagamento do Licenciamento em Dezembro ##\n"; break;
-          default: cout << "\n\n ## Final da placa inválido! ##\n";
+          default: cout << "\n\n ## Final da placa invÃ¡lido! ##\n";
        }
        break;
 
-     default: cout << "\n\n ## Tipo do Veículo Inválido! ##\n";
+     default: cout << "\n\n ## Tipo do VeÃ­culo InvÃ¡lido! ##\n";
 
    }
 }
