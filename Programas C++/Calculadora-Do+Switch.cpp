@@ -1,3 +1,4 @@
+// Author: Kleyton Dias
 #include <iostream>
 using namespace std;
 
@@ -12,12 +13,12 @@ int main(){
     do{
     printf("\n\n ### CALCULADORA ### \n\n"
             "  1- SOMA (+)\n"
-            "  2- SUBTRAÇÃO (-) \n"
-            "  3- MULTIPLICAÇÃO (*) \n"
-            "  4- DVISÃO (/)\n"
+            "  2- SUBTRAÃ‡ÃƒO (-) \n"
+            "  3- MULTIPLICAÃ‡ÃƒO (*) \n"
+            "  4- DVISÃƒO (/)\n"
             "  5- PORCENTAGEM (Desconto %) \n"
             "  6- PORCENTAGEM (Acrescimo %)"
-            "\n\n ### Escolha uma Opção: ");
+            "\n\n ### Escolha uma OpÃ§Ã£o: ");
     scanf ("%d", &operador);
 
     printf("\n --> Digite Primeiro Numero: ", num1);
@@ -32,15 +33,15 @@ int main(){
                 break;
             case 2:
                 calculo = num1 - num2;
-                printf("\n <<### RESULTADO SUBTRAÇÃO: %.1f - %.1f = %.2f ###>>\n\n", num1, num2, calculo);
+                printf("\n <<### RESULTADO SUBTRAÃ‡ÃƒO: %.1f - %.1f = %.2f ###>>\n\n", num1, num2, calculo);
                 break;
             case 3:
                 calculo = num1 * num2;
-                printf("\n <<### RESULTADO MULTIPLICAÇÃO: %.1f * %.1f = %.2f ###>>\n\n", num1, num2, calculo);
+                printf("\n <<### RESULTADO MULTIPLICAÃ‡ÃƒO: %.1f * %.1f = %.2f ###>>\n\n", num1, num2, calculo);
                 break;
             case 4:
                 calculo = num1 / num2;
-                printf("\n <<### RESULTADO DIVISÃO: %.1f / %.1f = %.2f ###>>\n\n", num1, num2, calculo);
+                printf("\n <<### RESULTADO DIVISÃƒO: %.1f / %.1f = %.2f ###>>\n\n", num1, num2, calculo);
                 break;
             case 5:
                 porcentagem = num2/100;
@@ -52,7 +53,7 @@ int main(){
                 calculo = num1 + (num1 * porcentagem);
                 printf("\n <<### RESULTADO PORCENTAGEM: %.1f + %.1f % = %.2f ###>>\n\n", num1, num2, calculo);
                 break;
-            default: printf("\n\n ### Operador Inválido! ###\n\n", operador);
+            default: printf("\n\n ### Operador InvÃ¡lido! ###\n\n", operador);
         }
 
         printf("---------------------------------------------");
