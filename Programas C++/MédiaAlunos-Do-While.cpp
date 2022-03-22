@@ -1,3 +1,4 @@
+// Author: Kleyton Dias
 #include <iostream>
 using namespace std;
 
@@ -9,12 +10,12 @@ int main()
     int aluno, aprovados = 0, reprovados = 0;
     char resp;
 
-    cout << "\n ### CALCULO MÉDIA DE ALUNOS ###";
+    cout << "\n ### CALCULO MÃ‰DIA DE ALUNOS ###";
 
     do{
-        cout << "\n\n --> Digite a 1ª Nota do Aluno: ";
+        cout << "\n\n --> Digite a 1Âª Nota do Aluno: ";
         cin >> AV1;
-        cout << " --> Digite a 2ª Nota do Aluno: ";
+        cout << " --> Digite a 2Âª Nota do Aluno: ";
         cin >> AV2;
 
         media = (AV1 + AV2)/2;
@@ -25,7 +26,7 @@ int main()
         else
             reprovados++;
 
-        cout << "\n\n --> Deseja Calcular a Média de outro Aluno [s/n]: ";
+        cout << "\n\n --> Deseja Calcular a MÃ©dia de outro Aluno [s/n]: ";
         cin >> resp;
 
     } while( resp == 's'|| resp == 'S');
