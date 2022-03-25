@@ -1,12 +1,12 @@
 // Author: Kleyton Dias
 /*
-Desenvolva um algoritmo para inserÁ„o de dados dos alunos de um determinado curso. O algoritmo dever·
-conter a matrÌcula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova.
- 	- Permita ao usu·rio entrar com os dados de 5 alunos.
+Desenvolva um algoritmo para inser√ß√£o de dados dos alunos de um determinado curso. O algoritmo dever√°
+conter a matr√≠cula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova.
+ 	- Permita ao usu√°rio entrar com os dados de 5 alunos.
  	- Encontre o aluno com maior nota da primeira prova.
- 	- Encontre o aluno com maior mÈdia geral.
- 	- Encontre o aluno com menor mÈdia geral
- 	- Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para aprovaÁ„o.
+ 	- Encontre o aluno com maior m√©dia geral.
+ 	- Encontre o aluno com menor m√©dia geral
+ 	- Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para aprova√ß√£o.
 */
 
 #include <stdio.h> // entrada e saida de dados
@@ -45,10 +45,10 @@ int main(void){
         printf("\n----------------------------------------------");
         printf("\n| ########### CADASTRO DE ALUNOS ########### |");
         printf("\n----------------------------------------------\n");
-        printf("\n   * Matricula do Aluno (n∫ 0%d): ", a+1);
+        printf("\n   * Matricula do Aluno (n¬∫ 0%d): ", a+1);
         scanf("%d", &cad_aluno[a].matricula);
         ignorarespacos();
-        printf("   * Nome do Aluno (n∫ 0%d): ", a+1);
+        printf("   * Nome do Aluno (n¬∫ 0%d): ", a+1);
         scanf("%[^\n]", &cad_aluno[a].nome);
         ignorarespacos();
         printf("   * Digite a Nota 01: ");
@@ -61,16 +61,16 @@ int main(void){
         scanf("%f", &cad_aluno[a].nota[2]);
         ignorarespacos();
 
-		cad_aluno[a].media = (cad_aluno[a].nota[0] + cad_aluno[a].nota[1] + cad_aluno[a].nota[2]) / 3;
+	cad_aluno[a].media = (cad_aluno[a].nota[0] + cad_aluno[a].nota[1] + cad_aluno[a].nota[2]) / 3;
         maiusculo(cad_aluno[a].nome, cad_aluno[a].nome);
 
         if(cad_aluno[a].media < 6){
-            printf("\n --> Aluno ** %s **, vocÍ est· REPROVADO(A)\n\n", cad_aluno[a].nome);
+            printf("\n --> Aluno ** %s **, voc√™ est√° REPROVADO(A)\n\n", cad_aluno[a].nome);
             system("PAUSE");
             system("cls");
         }
         else{
-            printf("\n --> Aluno ** %s **, vocÍ est· APROVADO(A)\n\n", cad_aluno[a].nome);
+            printf("\n --> Aluno ** %s **, voc√™ est√° APROVADO(A)\n\n", cad_aluno[a].nome);
             system("PAUSE");
             system("cls");
         }
@@ -80,10 +80,10 @@ int main(void){
 	menor = cad_aluno[0].media;
 
 	for (a=0; a<5; a++){
-        if(cad_aluno[a].nota[0]>nota){
-            maiornota1= a;
-            nota = cad_aluno[a].nota[0];
-        }
+        	if(cad_aluno[a].nota[0]>nota){
+            		maiornota1= a;
+            		nota = cad_aluno[a].nota[0];
+       		}
 		if(cad_aluno[a].media > maior){
 			maiornota = a;
 			maior = cad_aluno[a].media;
@@ -95,11 +95,11 @@ int main(void){
 	}
 
         printf("\n---------------------------------------------");
-        printf("\n| ########## AVALIA«√O DE ALUNOS ########## |");
+        printf("\n| ########## AVALIA√á√ÉO DE ALUNOS ########## |");
         printf("\n---------------------------------------------\n");
-		printf("\n  * Maior Nota da Primeira Prova: %s", cad_aluno[maiornota1].nome);
-        printf("\n  * Maior MÈdia.................: %s", cad_aluno[maiornota].nome);
-        printf("\n  * Menor MÈdia.................: %s \n\n", cad_aluno[menornota].nome);
+	printf("\n  * Maior Nota da Primeira Prova: %s", cad_aluno[maiornota1].nome);
+        printf("\n  * Maior M√©dia.................: %s", cad_aluno[maiornota].nome);
+        printf("\n  * Menor M√©dia.................: %s \n\n", cad_aluno[menornota].nome);
 
 	return 0;
 }
